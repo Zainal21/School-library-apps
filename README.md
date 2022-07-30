@@ -122,7 +122,7 @@ $ php artisan serve
 
 ### Manage Books page
 
--   Creator Manage Page
+-   Books Manage Page
     ![Books](public/screen_capture/book_page.png)
 
 -   Modal Form

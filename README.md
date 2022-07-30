@@ -1,64 +1,137 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
+# School Library
 
 <p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
+  <a href="https://reactjs.org/">
+    <img title="React Redux" src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400">
+  </a>
 </p>
 
-## About Laravel
+> Simple application for managing book and book creator (CRUD) using Laravel and Bootstrap
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+> This system must have User Level Admin and Non-Admin with Login, Logout, and reset password functions. **Admin can add Non-Admin users**, but **non-admin can not get users**.When adding or changing Book information, **Admin must be able to select Book Author**. in this case i use many to many relationship (because books can has more than one author)
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+---
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+## Table of contents
 
-## Learning Laravel
+-   [Table of contents](#table-of-contents)
+-   [Prerequiste](#prerequiste)
+-   [Tools](#tools)
+-   [Stacks](#stacks)
+-   [Installation and Cofiguration](#installation)
+-   [Screen Capture](#capture)
+    -   [Authentication](#authentication)
+    -   [Home](#home)
+    -   [Manage Author](#manage-author)
+    -   [Manage Book](#manage-book)
+    -   [User Page List](#users-list-page)
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+## Prerequiste
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+-   [Composer](https://getcomposer.org/) - Download and Install Composer
+-   Minimum PHP7.4.3
+-   MySQL
 
-## Laravel Sponsors
+## Tools
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+-   Terminal (OhMyZSH)
+-   Code Editor : Visual Studio Code
+-   Web Server : Apache
+-   Database Server : MySQL
+-   GUI Database Management : DBeaver
 
-### Premium Partners
+## Stacks
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
+-   PHP 7.4.3 (Because my OS unsupport PHP 8) - old linux
+-   Laravel 8 (Because my OS unsupport PHP 8) - old linux
+-   Bootstrap 4.6.0
+-   Toastr
+-   Sweetalert
+-   Select2
+-   DataTables
+-   MySQL
 
-## Contributing
+## Installation
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+1. Clone repository
 
-## Code of Conduct
+```bash
+$ git clone https://github.com/Zainal21/School-library-apps.git
+```
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+2. move to directory project and Install depedencies
 
-## Security Vulnerabilities
+```bash
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+$ cd schoollibrary-apps
 
-## License
+$ Composer install
+```
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+3. Setup your environment variabl in `.env` files or rename `.env.example to .env`.
+
+4. Generate your application key
+
+```bash
+$ php artisan key:generate
+```
+
+5. Generate your application key
+
+```bash
+$ php artisan key:generate
+```
+
+5. Run Migration and Seeder (if you not import .sql file manually)
+
+```bash
+$ php artisan migrate --seed
+```
+
+## Screen Capture Result
+
+### Authentication
+
+-   Login
+    ![Login](public/screen_capture/login.png)
+-   Register
+    ![Register](public/screen_capture/register.png)
+-   Book manage
+    ![Book manage](public/screen_capture/reset_password_ori.png)
+
+### Home
+
+-   Home (Admin)
+    ![Book manage](public/screen_capture/home_admin.png)
+-   Home (Non-Admin)
+    ![Book manage](public/screen_capture/non_admin.png)
+
+### Manage Book Creator
+
+-   Creator Manage Page
+    ![Book manage](public/screen_capture/author_page.png)
+
+-   Modal Form
+    ![Book manage](public/screen_capture/user_modal.png)
+
+### Manage Books page
+
+-   Creator Manage Page
+    ![Books](public/screen_capture/book_page.png)
+
+-   Modal Form
+    ![Modal Form Book Creator](public/screen_capture/modal_books.png)
+
+### Users list Page
+
+-   User list page (Admin Only)
+    ![Books](public/screen_capture/userpage.png)
+
+-   Modal Form
+    ![Modal Form User](public/screen_capture/modal_users.png)
+
+---
+
+Copyright © 2022 by Muhamad Zainal Arifin
+
+> The Project is Under MIT licensed.

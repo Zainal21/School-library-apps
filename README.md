@@ -63,7 +63,7 @@ $ git clone https://github.com/Zainal21/School-library-apps.git
 
 ```bash
 
-$ cd schoollibrary-apps
+$ cd school-library-apps
 
 $ Composer install
 ```
@@ -87,7 +87,10 @@ $ php artisan key:generate
 ```bash
 $ php artisan migrate --seed
 ```
-
+6. Run Development server 
+```bash 
+$ php artisan serve
+```
 ## Screen Capture Result
 
 ### Authentication

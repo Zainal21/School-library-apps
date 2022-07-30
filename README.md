@@ -102,7 +102,7 @@ $ php artisan serve
     ![Login](public/screen_capture/login.png)
 -   Register
     ![Register](public/screen_capture/register.png)
--   Book manage
+-   Reset Password
     ![Book manage](public/screen_capture/reset_password_ori.png)
 
 ### Home

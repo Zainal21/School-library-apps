@@ -87,10 +87,13 @@ $ php artisan key:generate
 ```bash
 $ php artisan migrate --seed
 ```
-6. Run Development server 
-```bash 
+
+6. Run Development server
+
+```bash
 $ php artisan serve
 ```
+
 ## Screen Capture Result
 
 ### Authentication

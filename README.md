@@ -42,8 +42,8 @@
 
 ## Stacks
 
--   PHP 7.4.3 (Because my OS unsupport PHP 8) - old linux
--   Laravel 8 (Because my OS unsupport PHP 8) - old linux
+-   PHP 7.4.3 (Because my OS does not support PHP 8) - old linux
+-   Laravel 8 (Because my OS does not support PHP 8) - old linux
 -   Bootstrap 4.6.0
 -   Toastr
 -   Sweetalert
@@ -112,7 +112,7 @@ $ php artisan migrate --seed
     ![Book manage](public/screen_capture/author_page.png)
 
 -   Modal Form
-    ![Book manage](public/screen_capture/user_modal.png)
+    ![Book manage](public/screen_capture/creator_modal.png)
 
 ### Manage Books page
 

@@ -1,8 +1,8 @@
 # School Library
 
 <p align="center">
-  <a href="https://reactjs.org/">
-    <img title="React Redux" src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400">
+  <a href="https://laravel.com/">
+    <img title="https://laravel.com/" src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400">
   </a>
 </p>
 
@@ -71,12 +71,6 @@ $ Composer install
 3. Setup your environment variabl in `.env` files or rename `.env.example to .env`.
 
 4. Generate your application key
-
-```bash
-$ php artisan key:generate
-```
-
-5. Generate your application key
 
 ```bash
 $ php artisan key:generate
